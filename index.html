@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Jupre Salon and Cosmetic — Premium hair, nail, facial and spa services in Nnewi, Anambra. Pedicure, manicure, facials, waxing and more. Book your appointment today." />
+    <title>Jupre Salon and Cosmetic | Hair, Nails & Spa in Nnewi, Anambra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BeautySalon","name":"Jupre Salon and Cosmetic","description":"Premium hair, nail, facial and spa services in Nnewi, Anambra State.","address":{"@type":"PostalAddress","addressLocality":"Abubo, Nnewi","addressRegion":"Anambra","addressCountry":"NG"},"openingHours":"Mo-Sa 08:00-18:30"}
+    </script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="#home" class="logo">Jupre <span>Salon</span></a>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#rituals" class="nav-link">Packages</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <a href="#booking" class="btn-nav-book">Book Now</a>
+          <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-video-bg">
+        <video
+          id="heroVideo"
+          autoplay
+          muted
+          playsinline
+          preload="auto"
+          poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80&fit=crop"
+        ></video>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" id="heroEyebrow">Nnewi · Anambra · Premium Beauty</p>
+        <h1 class="hero-title" id="heroTitle">
+          <span class="line" data-line="1">Restore.</span>
+          <span class="line" data-line="2">Renew.</span>
+          <span class="line" data-line="3">Glow.</span>
+        </h1>
+        <p class="hero-sub" id="heroSub">
+          Bespoke hair, nail and spa experiences designed to<br />elevate your beauty and awaken your confidence.
+        </p>
+        <div class="hero-cta" id="heroCta">
+          <a href="#booking" class="btn-primary">Book Your Appointment</a>
+          <a href="#services" class="btn-ghost">Explore Services</a>
+        </div>
+      </div>
+      <div class="hero-video-nav" id="heroVideoNav"></div>
+      <div class="hero-scroll-hint" id="heroScroll">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <div class="marquee-strip">
+      <div class="marquee-track">
+        <span>Hair Styling</span><span class="dot">✦</span>
+        <span>Pedicure</span><span class="dot">✦</span>
+        <span>Luxury Facials</span><span class="dot">✦</span>
+        <span>Nail Art</span><span class="dot">✦</span>
+        <span>Manicure</span><span class="dot">✦</span>
+        <span>Waxing</span><span class="dot">✦</span>
+        <span>Hair Installation</span><span class="dot">✦</span>
+        <span>Skincare</span><span class="dot">✦</span>
+        <span>Hair Styling</span><span class="dot">✦</span>
+        <span>Pedicure</span><span class="dot">✦</span>
+        <span>Luxury Facials</span><span class="dot">✦</span>
+        <span>Nail Art</span><span class="dot">✦</span>
+        <span>Manicure</span><span class="dot">✦</span>
+        <span>Waxing</span><span class="dot">✦</span>
+        <span>Hair Installation</span><span class="dot">✦</span>
+        <span>Skincare</span><span class="dot">✦</span>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-wrap" data-parallax>
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=80&fit=crop" alt="Jupre Salon and Cosmetic" class="about-img" />
+            <div class="about-badge-float">
+              <span class="badge-number">500+</span>
+              <span class="badge-label">Happy Clients</span>
+            </div>
+          </div>
+          <div class="about-text">
+            <p class="section-eyebrow" data-reveal>Our Story</p>
+            <h2 class="section-title" data-reveal>A salon crafted<br /><em>for your beauty.</em></h2>
+            <p class="about-desc" data-reveal>Nestled in Abubo, Nnewi, Jupre Salon and Cosmetic was built on one belief — that every woman deserves to feel beautiful, confident, and truly cared for. Every service, every touch, every detail is intentional.</p>
+            <p class="about-desc" data-reveal>Our skilled team blends precision technique with genuine warmth to create an experience that goes beyond a regular salon visit — and stays with you long after you leave.</p>
+            <div class="about-stats" data-reveal>
+              <div class="stat">
+                <span class="stat-num" data-count="500">0</span>
+                <span class="stat-label">Happy Clients</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="10">0</span>
+                <span class="stat-label">Services</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="6">0</span>
+                <span class="stat-label">Days a Week</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-reveal>What We Offer</p>
+          <h2 class="section-title" data-reveal>Services designed<br /><em>to transform.</em></h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" data-reveal-card>
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80&fit=crop" alt="Hair Styling" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Hair Styling & Colour</h3>
+              <p class="service-desc">Precision cuts, bold colours, highlights and full styling transformations tailored to your personality and lifestyle.</p>
+              <div class="service-footer">
+                <span class="service-duration">45 – 90 min</span>
+                <span class="service-price">From ₦—</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-reveal-card>
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&fit=crop" alt="Nail Services" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Nail Services</h3>
+              <p class="service-desc">Classic manicure, gel polish, pedicure, nail art and extensions — every detail crafted for a flawless, lasting finish.</p>
+              <div class="service-footer">
+                <span class="service-duration">30 – 75 min</span>
+                <span class="service-price">From ₦—</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-reveal-card>
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80&fit=crop" alt="Facials & Skincare" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Facials & Skincare</h3>
+              <p class="service-desc">Customised facial treatments including Moroccan Radiance Therapy and skin renewal for genuinely glowing, healthy skin.</p>
+              <div class="service-footer">
+                <span class="service-duration">60 min</span>
+                <span class="service-price">From ₦—</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-reveal-card>
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=500&q=80&fit=crop" alt="Spa Pedicure" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Spa Pedicure</h3>
+              <p class="service-desc">Our signature spa pedicure — full soak, exfoliation, scrub, mask, massage and gel polish for deeply pampered feet.</p>
+              <div class="service-footer">
+                <span class="service-duration">60 min</span>
+                <span class="service-price">From ₦—</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-reveal-card>
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=500&q=80&fit=crop" alt="Hair Installation" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Hair Installation</h3>
+              <p class="service-desc">Weaves, braids, natural installs and extensions — done with precision and care for a natural, seamless look.</p>
+              <div class="service-footer">
+                <span class="service-duration">90 – 180 min</span>
+                <span class="service-price">From ₦—</span>
+              </div>
+            </div>
+          </div>
+          <div class="service-card" data-reveal-card>
+            <div class="service-card-img">
+              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&q=80&fit=crop" alt="Waxing & Hair Removal" loading="lazy" />
+            </div>
+            <div class="service-card-body">
+              <h3 class="service-name">Waxing & Hair Removal</h3>
+              <p class="service-desc">Professional waxing for smooth, long-lasting results. Gentle technique, thorough finish, every single time.</p>
+              <div class="service-footer">
+                <span class="service-duration">20 – 60 min</span>
+                <span class="service-price">From ₦—</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rituals" id="rituals">
+      <div class="rituals-sticky">
+        <div class="rituals-progress-bar">
+          <div class="rituals-progress-fill" id="ritualsProgress"></div>
+        </div>
+        <div class="ritual-panel active" data-ritual="0">
+          <div class="ritual-image-side">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=700&q=80&fit=crop" alt="The Jupre Glow Package" />
+          </div>
+          <div class="ritual-text-side">
+            <p class="ritual-num">01</p>
+            <h2 class="ritual-title">The Jupre<br /><em>Glow Package</em></h2>
+            <p class="ritual-desc">Our signature full-beauty experience. Begin with a luxurious spa pedicure, flow into a gel manicure with nail art, enjoy a deep-cleanse facial, and finish with a hair blowout. Head-to-toe transformation.</p>
+            <ul class="ritual-includes">
+              <li>✦ Spa Pedicure & Gel Polish</li>
+              <li>✦ Gel Manicure with Nail Art</li>
+              <li>✦ Deep Cleanse Facial</li>
+              <li>✦ Hair Blowout & Style</li>
+            </ul>
+            <div class="ritual-cta">
+              <span class="ritual-price">Ask in-salon</span>
+              <a href="#booking" class="btn-primary btn-sm">Book This Package</a>
+            </div>
+          </div>
+        </div>
+        <div class="ritual-panel" data-ritual="1">
+          <div class="ritual-image-side">
+            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=700&q=80&fit=crop" alt="The Radiance Package" />
+          </div>
+          <div class="ritual-text-side">
+            <p class="ritual-num">02</p>
+            <h2 class="ritual-title">The Radiance<br /><em>Package</em></h2>
+            <p class="ritual-desc">A two-hour skin revival. Full body exfoliation, followed by our Moroccan Radiance Therapy and a brightening skin renewal facial. Leave absolutely glowing from within.</p>
+            <ul class="ritual-includes">
+              <li>✦ Full Body Exfoliation</li>
+              <li>✦ Moroccan Radiance Therapy</li>
+              <li>✦ Skin Renewal Facial</li>
+              <li>✦ Eyebrow Shaping</li>
+            </ul>
+            <div class="ritual-cta">
+              <span class="ritual-price">Ask in-salon</span>
+              <a href="#booking" class="btn-primary btn-sm">Book This Package</a>
+            </div>
+          </div>
+        </div>
+        <div class="ritual-panel" data-ritual="2">
+          <div class="ritual-image-side">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80&fit=crop" alt="The Full Glam Package" />
+          </div>
+          <div class="ritual-text-side">
+            <p class="ritual-num">03</p>
+            <h2 class="ritual-title">The Full<br /><em>Glam Package</em></h2>
+            <p class="ritual-desc">Everything in one visit. Hair installation or styling of your choice, gel nails, a classic pedicure and a skincare facial. Perfect for special occasions — or when you simply deserve it all.</p>
+            <ul class="ritual-includes">
+              <li>✦ Hair Installation or Full Style</li>
+              <li>✦ Gel Nails (Hands & Feet)</li>
+              <li>✦ Classic Pedicure</li>
+              <li>✦ Skincare Facial</li>
+            </ul>
+            <div class="ritual-cta">
+              <span class="ritual-price">Ask in-salon</span>
+              <a href="#booking" class="btn-primary btn-sm">Book This Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-reveal>The Experience</p>
+          <h2 class="section-title" data-reveal>Step inside<br /><em>your sanctuary.</em></h2>
+        </div>
+      </div>
+      <div class="gallery-mosaic">
+        <div class="gallery-item gi-tall" data-tilt>
+          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80&fit=crop" alt="Jupre Salon" loading="lazy" />
+          <div class="gallery-overlay"><span>Our Salon</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&fit=crop" alt="Nail art" loading="lazy" />
+          <div class="gallery-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <video autoplay muted loop playsinline class="gallery-video"
+            poster="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop">
+            <source src="https://videos.pexels.com/video-files/4498172/4498172-hd_1280_720_25fps.mp4" type="video/mp4" />
+          </video>
+          <div class="gallery-overlay"><span>Facials</span></div>
+        </div>
+        <div class="gallery-item gi-wide" data-tilt>
+          <video autoplay muted loop playsinline class="gallery-video"
+            poster="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80&fit=crop">
+            <source src="https://videos.pexels.com/video-files/3209211/3209211-hd_1280_720_25fps.mp4" type="video/mp4" />
+          </video>
+          <div class="gallery-overlay"><span>Hair Styling</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80&fit=crop" alt="Pedicure" loading="lazy" />
+          <div class="gallery-overlay"><span>Pedicure</span></div>
+        </div>
+        <div class="gallery-item gi-tall" data-tilt>
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80&fit=crop" alt="Skincare" loading="lazy" />
+          <div class="gallery-overlay"><span>Skincare</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-reveal>Client Words</p>
+          <h2 class="section-title" data-reveal>They came for beauty.<br /><em>They left transformed.</em></h2>
+        </div>
+        <div class="testimonials-carousel">
+          <div class="testimonials-track" id="testimonialsTrack">
+            <div class="tcard">
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-text">"I walked in for a pedicure and walked out feeling like a queen. The attention to detail is on another level — my nails have never looked this good. Jupre is the only salon I trust now."</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">CN</div>
+                <div>
+                  <p class="tcard-name">Chidinma Nwosu</p>
+                  <p class="tcard-role">Regular Client</p>
+                </div>
+              </div>
+            </div>
+            <div class="tcard">
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-text">"Got my hair installed here and received compliments for two weeks straight. The team is so professional and the salon is so clean and welcoming. 10/10 every single time."</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">AO</div>
+                <div>
+                  <p class="tcard-name">Adaeze Okafor</p>
+                  <p class="tcard-role">Hair Installation Client</p>
+                </div>
+              </div>
+            </div>
+            <div class="tcard">
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-text">"The Moroccan facial treatment completely changed my skin. I had been struggling with uneven skin tone for months and after two sessions here I'm genuinely glowing. Highly recommend."</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">UA</div>
+                <div>
+                  <p class="tcard-name">Uchenna Agu</p>
+                  <p class="tcard-role">Skincare Client</p>
+                </div>
+              </div>
+            </div>
+            <div class="tcard">
+              <div class="tcard-stars">★★★★★</div>
+              <p class="tcard-text">"Best nail art in Nnewi, full stop. I showed them a design I saw online and they executed it perfectly. The gel polish lasted over three weeks without chipping. Absolutely amazed."</p>
+              <div class="tcard-author">
+                <div class="tcard-avatar">NI</div>
+                <div>
+                  <p class="tcard-name">Ngozi Ike</p>
+                  <p class="tcard-role">Nail Art Client</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials-dots" id="testimonialsDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="booking" id="booking">
+      <div class="booking-inner">
+        <div class="booking-text" data-reveal>
+          <p class="section-eyebrow light">Reserve Your Appointment</p>
+          <h2 class="booking-title">Your glow-up<br /><em>awaits.</em></h2>
+          <p class="booking-desc">Book via WhatsApp for instant confirmation. We'll personalise your experience before you arrive.</p>
+          <ul class="booking-perks">
+            <li>✦ Instant WhatsApp confirmation</li>
+            <li>✦ Walk-ins warmly welcome</li>
+            <li>✦ Open Monday – Saturday, 8am – 6:30pm</li>
+            <li>✦ Professional, caring team</li>
+          </ul>
+        </div>
+        <div class="booking-form-wrap" data-reveal>
+          <div class="booking-card">
+            <h3 class="booking-card-title">Book a Session</h3>
+            <div class="booking-fields">
+              <div class="bfield">
+                <label for="bk-name">Full Name</label>
+                <input type="text" id="bk-name" class="bk-input" placeholder="Your name" />
+              </div>
+              <div class="bfield">
+                <label for="bk-service">Service</label>
+                <select id="bk-service" class="bk-input">
+                  <option value="">Select a service</option>
+                  <option>Hair Styling & Colour</option>
+                  <option>Classic Manicure</option>
+                  <option>Gel Manicure</option>
+                  <option>Classic Pedicure</option>
+                  <option>Spa Pedicure</option>
+                  <option>Nail Art</option>
+                  <option>Facial & Skincare</option>
+                  <option>Moroccan Radiance Therapy</option>
+                  <option>Hair Installation</option>
+                  <option>Waxing & Hair Removal</option>
+                  <option>The Jupre Glow Package</option>
+                  <option>The Radiance Package</option>
+                  <option>The Full Glam Package</option>
+                </select>
+              </div>
+              <div class="bfield">
+                <label for="bk-date">Preferred Date</label>
+                <input type="date" id="bk-date" class="bk-input" />
+              </div>
+              <div class="bfield">
+                <label for="bk-time">Preferred Time</label>
+                <select id="bk-time" class="bk-input">
+                  <option value="">Select a time</option>
+                  <option>8:00 AM</option><option>9:00 AM</option>
+                  <option>10:00 AM</option><option>11:00 AM</option>
+                  <option>12:00 PM</option><option>1:00 PM</option>
+                  <option>2:00 PM</option><option>3:00 PM</option>
+                  <option>4:00 PM</option><option>5:00 PM</option>
+                  <option>6:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn-book-now" id="bookBtn">Confirm Booking via WhatsApp 💬</button>
+            <p class="bk-note">Open Mon – Sat · 8:00am – 6:30pm · Abubo, Nnewi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info" data-reveal>
+            <p class="section-eyebrow">Find Us</p>
+            <h2 class="section-title">Come in.<br /><em>Feel beautiful.</em></h2>
+            <ul class="contact-list">
+              <li><span class="contact-icon">📍</span><span>Abubo, Nnewi<br />Anambra State, Nigeria</span></li>
+              <li><span class="contact-icon">📱</span><a href="tel:+234XXXXXXXXXX">Add phone number</a></li>
+              <li><span class="contact-icon">🕐</span><span>Monday – Saturday: 8:00am – 6:30pm<br />Sunday: Closed</span></li>
+            </ul>
+            <div class="contact-social">
+              <a href="https://wa.me/234XXXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20Jupre%20Salon%20and%20Cosmetic" class="csoc" aria-label="WhatsApp">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </a>
+              <a href="#" class="csoc" aria-label="TikTok">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="contact-map-wrap" data-reveal>
+            <div class="map-container map-desktop">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4!2d6.9167!3d6.0167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNnewi%2C%20Anambra!5e0!3m2!1sen!2sng!4v1234567890!5m2!1sen!2sng" width="100%" height="100%" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <a href="https://maps.google.com/?q=Abubo+Nnewi+Anambra+Nigeria" target="_blank" class="map-mobile-link">📍 View on Google Maps →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <p class="footer-logo">Jupre <span>Salon</span></p>
+            <p class="footer-tagline">Your beauty, our craft.<br />Nnewi's premium salon experience.</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">Services</p>
+            <ul class="footer-links">
+              <li><a href="#services">Hair Styling</a></li>
+              <li><a href="#services">Nail Services</a></li>
+              <li><a href="#services">Facials & Skincare</a></li>
+              <li><a href="#services">Hair Installation</a></li>
+              <li><a href="#services">Waxing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">Visit Us</p>
+            <ul class="footer-links">
+              <li>Abubo, Nnewi</li>
+              <li>Anambra State, Nigeria</li>
+              <li><a href="tel:+234XXXXXXXXXX">Add phone number</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <p class="footer-heading">Hours</p>
+            <ul class="footer-links">
+              <li>Mon – Sat: 8:00am – 6:30pm</li>
+              <li>Sunday: Closed</li>
+            </ul>
+            <a href="https://wa.me/234XXXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20Jupre%20Salon%20and%20Cosmetic" target="_blank" class="footer-whatsapp">💬 Book on WhatsApp</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Jupre Salon and Cosmetic, Nnewi. All rights reserved.</p>
+          <p class="footer-credit">Website by <strong>CodedBryt</strong></p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="mobile-sticky-bar">
+      <a href="tel:+234XXXXXXXXXX" class="sticky-btn sticky-call">📞 Call Us</a>
+      <a href="#booking" class="sticky-btn sticky-book">🌿 Book Now</a>
+    </div>
+
+    <a href="https://wa.me/234XXXXXXXXXX?text=Hi!%20I'd%20like%20to%20book%20an%20appointment%20at%20Jupre%20Salon%20and%20Cosmetic" class="whatsapp-float" target="_blank" aria-label="Book on WhatsApp">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
