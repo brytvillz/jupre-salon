@@ -197,7 +197,7 @@ window.addEventListener("DOMContentLoaded", () => {
       if (!date) { alert("Please choose a preferred date."); return; }
       const msg = `Hi! I'd like to book an appointment at Jupre Salon and Cosmetic 💅\n\n` +
         `👤 Name: ${name}\n💅 Service: ${service}\n📅 Date: ${date}\n🕐 Time: ${time || "Flexible"}\n\nPlease confirm availability. Thank you!`;
-      window.open(`https://wa.me/234XXXXXXXXXX?text=${encodeURIComponent(msg)}`, "_blank");
+      window.open(`https://wa.me/2347043470896?text=${encodeURIComponent(msg)}`, "_blank");
     });
   }
 
