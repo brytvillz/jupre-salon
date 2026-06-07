@@ -230,9 +230,16 @@ window.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
       const target = document.querySelector(a.getAttribute("href"));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: "smooth", block: "start" }); }
+      if (!target) return;
+      e.preventDefault();
+      const headerH = document.getElementById("header")?.offsetHeight || 80;
+      const y = target.getBoundingClientRect().top + window.scrollY - headerH;
+      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
     });
   });
+
+  const footerYear = document.getElementById("footerYear");
+  if (footerYear) footerYear.textContent = new Date().getFullYear();
 
   const aboutImgWrap = document.querySelector("[data-parallax]");
   if (aboutImgWrap) {
