@@ -96,6 +96,13 @@
             <li><a href="#home" class="nav-link">Home</a></li>
             <li><a href="#services" class="nav-link">Services</a></li>
             <li><a href="#rituals" class="nav-link">Packages</a></li>
+            <li class="nav-dropdown-wrap">
+              <a href="#" class="nav-link nav-dropdown-toggle" id="shopDropdownToggle">Shop</a>
+              <ul class="nav-dropdown-menu" id="navShopDropdown">
+                <li><a href="hair.html">Hair Collection</a></li>
+                <li><a href="shop.html">Beauty Products</a></li>
+              </ul>
+            </li>
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
             <li><a href="#testimonials" class="nav-link">Reviews</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -110,14 +117,11 @@
 
     <section id="home" class="hero">
       <div class="hero-video-bg">
-        <video
+        <img
           id="heroVideo"
-          autoplay
-          muted
-          playsinline
-          preload="auto"
-          poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80&fit=crop"
-        ></video>
+          src="images/salon/hero-bg.jpg"
+          alt="Jupre Salon Nnewi — Hair, Nails and Beauty"
+        />
       </div>
       <div class="hero-content">
         <p class="hero-eyebrow" id="heroEyebrow">Nnewi · Anambra · Premium Beauty</p>
@@ -166,7 +170,7 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-image-wrap" data-parallax>
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&q=80&fit=crop" alt="Jupre Salon and Cosmetic" class="about-img" />
+            <img src="images/hair/braiding-crown.jpg" alt="Expert braiding at Jupre Salon and Cosmetic, Nnewi" class="about-img" />
             <div class="about-badge-float">
               <span class="badge-number">500+</span>
               <span class="badge-label">Happy Clients</span>
@@ -196,6 +200,30 @@
       </div>
     </section>
 
+    <section class="our-team" id="team">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow" data-reveal>The People Behind the Magic</p>
+          <h2 class="section-title" data-reveal>Passionate hands.<br /><em>Expert craft.</em></h2>
+          <p data-reveal style="color:var(--text-mid);max-width:520px;margin:0 auto;font-size:1rem;line-height:1.8">Our skilled team brings years of experience, genuine warmth and creative precision to every single client — every single visit.</p>
+        </div>
+        <div class="team-gallery">
+          <div class="team-img-item" data-reveal-card>
+            <img src="images/salon/team-braiding.jpg" alt="Jupre Salon braiding team at work, Nnewi" loading="lazy" />
+            <div class="team-img-caption">Braiding Studio</div>
+          </div>
+          <div class="team-img-item" data-reveal-card>
+            <img src="images/salon/team-facial.jpg" alt="Jupre Salon therapist performing facial treatment" loading="lazy" />
+            <div class="team-img-caption">Facial Therapy</div>
+          </div>
+          <div class="team-img-item" data-reveal-card>
+            <img src="images/salon/salon-interior.jpg" alt="Interior of Jupre Salon and Cosmetic, Nnewi" loading="lazy" />
+            <div class="team-img-caption">Our Space</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="services" id="services">
       <div class="container">
         <div class="section-header">
@@ -205,7 +233,7 @@
         <div class="services-grid">
           <div class="service-card" data-reveal-card>
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80&fit=crop" alt="Hair Styling" loading="lazy" />
+              <img src="images/hair/braiding-fulani-salon.jpg" alt="Expert hair braiding at Jupre Salon Nnewi" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3 class="service-name">Hair Styling & Colour</h3>
@@ -218,7 +246,7 @@
           </div>
           <div class="service-card" data-reveal-card>
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500&q=80&fit=crop" alt="Nail Services" loading="lazy" />
+              <img src="images/nails/nail-art-red-gold.jpg" alt="Nail art and manicure at Jupre Salon Nnewi" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3 class="service-name">Nail Services</h3>
@@ -231,7 +259,9 @@
           </div>
           <div class="service-card" data-reveal-card>
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&q=80&fit=crop" alt="Facials & Skincare" loading="lazy" />
+              <video autoplay muted loop playsinline preload="none" poster="images/salon/team-facial.jpg">
+                <source src="images/videos/facials-vid.mp4" type="video/mp4" />
+              </video>
             </div>
             <div class="service-card-body">
               <h3 class="service-name">Facials & Skincare</h3>
@@ -244,7 +274,9 @@
           </div>
           <div class="service-card" data-reveal-card>
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=500&q=80&fit=crop" alt="Spa Pedicure" loading="lazy" />
+              <video autoplay muted loop playsinline preload="none" poster="images/nails/nail-sets-collection.jpg">
+                <source src="images/videos/pedicure-vid.mp4" type="video/mp4" />
+              </video>
             </div>
             <div class="service-card-body">
               <h3 class="service-name">Spa Pedicure</h3>
@@ -257,7 +289,7 @@
           </div>
           <div class="service-card" data-reveal-card>
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=500&q=80&fit=crop" alt="Hair Installation" loading="lazy" />
+              <img src="images/hair/wig-curly-honey.jpg" alt="Hair installation and wigs at Jupre Salon Nnewi" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3 class="service-name">Hair Installation</h3>
@@ -270,7 +302,7 @@
           </div>
           <div class="service-card" data-reveal-card>
             <div class="service-card-img">
-              <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=500&q=80&fit=crop" alt="Waxing & Hair Removal" loading="lazy" />
+              <img src="images/nails/nail-art-smiley.jpg" alt="Nail art at Jupre Salon Nnewi" loading="lazy" />
             </div>
             <div class="service-card-body">
               <h3 class="service-name">Waxing & Hair Removal</h3>
@@ -292,7 +324,7 @@
         </div>
         <div class="ritual-panel active" data-ritual="0">
           <div class="ritual-image-side">
-            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=700&q=80&fit=crop" alt="The Jupre Glow Package" />
+            <img src="images/nails/nail-sets-collection.jpg" alt="The Jupre Glow Package" />
           </div>
           <div class="ritual-text-side">
             <p class="ritual-num">01</p>
@@ -312,7 +344,7 @@
         </div>
         <div class="ritual-panel" data-ritual="1">
           <div class="ritual-image-side">
-            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=700&q=80&fit=crop" alt="The Radiance Package" />
+            <img src="images/salon/team-facial.jpg" alt="The Radiance Package" />
           </div>
           <div class="ritual-text-side">
             <p class="ritual-num">02</p>
@@ -332,7 +364,7 @@
         </div>
         <div class="ritual-panel" data-ritual="2">
           <div class="ritual-image-side">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=700&q=80&fit=crop" alt="The Full Glam Package" />
+            <img src="images/hair/braiding-crown.jpg" alt="The Full Glam Package" />
           </div>
           <div class="ritual-text-side">
             <p class="ritual-num">03</p>
@@ -362,34 +394,90 @@
       </div>
       <div class="gallery-mosaic">
         <div class="gallery-item gi-tall" data-tilt>
-          <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=80&fit=crop" alt="Jupre Salon" loading="lazy" />
-          <div class="gallery-overlay"><span>Our Salon</span></div>
+          <img src="images/hair/braiding-crown.jpg" alt="Intricate braiding by Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Braiding Art</span></div>
         </div>
         <div class="gallery-item" data-tilt>
-          <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80&fit=crop" alt="Nail art" loading="lazy" />
+          <img src="images/gallery/lash-glow.jpg" alt="Lash extensions result at Jupre Salon" loading="lazy" />
+          <div class="gallery-overlay"><span>Lash Extensions</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="images/nails/nail-sets-held.jpg" alt="Press-on nail sets at Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Press-On Nails</span></div>
+        </div>
+        <div class="gallery-item gi-wide" data-tilt>
+          <img src="images/nails/nail-sets-3boxes.jpg" alt="Nail set collection at Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Nail Sets</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="images/nails/nail-art-smiley.jpg" alt="Minimalist nail art at Jupre Salon Nnewi" loading="lazy" />
           <div class="gallery-overlay"><span>Nail Art</span></div>
         </div>
         <div class="gallery-item" data-tilt>
-          <video autoplay muted loop playsinline class="gallery-video"
-            poster="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80&fit=crop">
-            <source src="https://videos.pexels.com/video-files/4498172/4498172-hd_1280_720_25fps.mp4" type="video/mp4" />
-          </video>
-          <div class="gallery-overlay"><span>Facials</span></div>
-        </div>
-        <div class="gallery-item gi-wide" data-tilt>
-          <video autoplay muted loop playsinline class="gallery-video"
-            poster="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80&fit=crop">
-            <source src="https://videos.pexels.com/video-files/3209211/3209211-hd_1280_720_25fps.mp4" type="video/mp4" />
-          </video>
-          <div class="gallery-overlay"><span>Hair Styling</span></div>
+          <img src="images/nails/nail-sets-4boxes.jpg" alt="Nail set boxes at Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Nail Sets</span></div>
         </div>
         <div class="gallery-item" data-tilt>
-          <img src="https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&q=80&fit=crop" alt="Pedicure" loading="lazy" />
-          <div class="gallery-overlay"><span>Pedicure</span></div>
+          <img src="images/nails/nail-art-gold-leopard.jpg" alt="Gold nail art at Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="images/nails/nail-set-pink-bow.jpg" alt="Pink stiletto nail set at Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Press-On Nails</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="images/hair/braiding-beads.jpg" alt="Cornrow braids with beads by Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Cornrow Braids</span></div>
         </div>
         <div class="gallery-item gi-tall" data-tilt>
-          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&q=80&fit=crop" alt="Skincare" loading="lazy" />
-          <div class="gallery-overlay"><span>Skincare</span></div>
+          <img src="images/gallery/lash-treatment.jpg" alt="Lash treatment in progress at Jupre Salon" loading="lazy" />
+          <div class="gallery-overlay"><span>Lash Treatment</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="images/nails/nail-art-red-gold.jpg" alt="Red and gold stiletto nail art by Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Nail Art</span></div>
+        </div>
+        <div class="gallery-item gi-wide" data-tilt>
+          <img src="images/salon/salon-interior.jpg" alt="Interior of Jupre Salon and Cosmetic, Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Our Space</span></div>
+        </div>
+        <div class="gallery-item" data-tilt>
+          <img src="images/nails/nail-classic-wine.jpg" alt="Classic wine manicure at Jupre Salon Nnewi" loading="lazy" />
+          <div class="gallery-overlay"><span>Classic Manicure</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-teaser" id="shop">
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <p class="section-eyebrow">Shop Jupre</p>
+          <h2 class="section-title">More than a salon.<br /><em>A complete beauty destination.</em></h2>
+          <p style="color:var(--text-mid);max-width:520px;margin:0 auto;font-size:1rem;line-height:1.8">Browse our curated selection of premium hair and professional beauty products — available for order right here in Nnewi.</p>
+        </div>
+        <div class="shop-teaser-grid">
+          <a href="hair.html" class="shop-teaser-card" data-reveal-card>
+            <div class="stc-img">
+              <img src="images/hair/wig-curly-honey.jpg" alt="Brazilian hair collection at Jupre Salon Nnewi" loading="lazy" />
+            </div>
+            <div class="stc-body">
+              <span class="stc-eyebrow">100% Human Hair</span>
+              <span class="stc-title">Premium Hair Collection</span>
+              <span class="stc-desc">Bundles, wigs, closures, frontals and braiding hair. All textures, all lengths. Chat on WhatsApp to get prices and order.</span>
+              <span class="stc-cta">Shop Hair →</span>
+            </div>
+          </a>
+          <a href="shop.html" class="shop-teaser-card" data-reveal-card>
+            <div class="stc-img">
+              <img src="images/products/product-5medix-lotion.jpg" alt="Skincare and beauty products at Jupre Salon Nnewi" loading="lazy" />
+            </div>
+            <div class="stc-body">
+              <span class="stc-eyebrow">Skincare &amp; Body Care</span>
+              <span class="stc-title">Beauty Products</span>
+              <span class="stc-desc">Professional-grade skincare, hair care and body care products. Trusted brands, handpicked by our beauty experts.</span>
+              <span class="stc-cta">Shop Products →</span>
+            </div>
+          </a>
         </div>
       </div>
     </section>

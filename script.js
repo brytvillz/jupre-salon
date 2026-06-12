@@ -8,27 +8,23 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.normalizeScroll(false);
 ScrollTrigger.defaults({ scroller: window });
 
-(function initHeroVideo() {
-  const video = document.getElementById("heroVideo");
-  const nav   = document.getElementById("heroVideoNav");
-  if (!video) return;
+(function initHeroSlideshow() {
+  const img = document.getElementById("heroVideo");
+  const nav = document.getElementById("heroVideoNav");
+  if (!img) return;
 
-  const clips = [
-    { src: "https://videos.pexels.com/video-files/3209211/3209211-hd_1280_720_25fps.mp4",  label: "Hair Styling"  },
-    { src: "https://videos.pexels.com/video-files/4498172/4498172-hd_1280_720_25fps.mp4",  label: "Skincare"      },
-    { src: "https://videos.pexels.com/video-files/5935742/5935742-hd_1280_720_25fps.mp4",  label: "Nail Art"      },
-    { src: "https://videos.pexels.com/video-files/3879491/3879491-hd_1280_720_25fps.mp4",  label: "Spa & Wellness"},
+  const slides = [
+    { src: "images/salon/hero-bg.jpg", label: "Jupre Salon" },
   ];
 
   let current = 0;
   let cycleTimer = null;
 
-  // Build nav dots
   if (nav) {
-    clips.forEach((clip, i) => {
+    slides.forEach((slide, i) => {
       const btn = document.createElement("button");
       btn.className = "hvdot" + (i === 0 ? " active" : "");
-      btn.setAttribute("aria-label", clip.label);
+      btn.setAttribute("aria-label", slide.label);
       btn.addEventListener("click", () => go(i));
       nav.appendChild(btn);
     });
@@ -40,33 +36,18 @@ ScrollTrigger.defaults({ scroller: window });
   }
 
   function go(index) {
-    current = ((index % clips.length) + clips.length) % clips.length;
-    video.style.opacity = "0";
+    current = ((index % slides.length) + slides.length) % slides.length;
+    img.style.opacity = "0";
     clearTimeout(cycleTimer);
     setTimeout(() => {
-      video.src = clips[current].src;
-      video.load();
-      video.play().catch(() => {});
-      video.style.opacity = "1";
-      cycleTimer = setTimeout(() => go(current + 1), 12000);
+      img.src = slides[current].src;
+      img.style.opacity = "1";
+      cycleTimer = setTimeout(() => go(current + 1), 6000);
     }, 600);
     updateDots();
   }
 
-  // Pause/resume on visibility
-  const heroEl = document.getElementById("home");
-  if (heroEl) {
-    new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { video.play().catch(() => {}); }
-        else { video.pause(); }
-      });
-    }, { threshold: 0.1 }).observe(heroEl);
-  }
-
-  // Kick off
   go(0);
-  video.addEventListener("ended", () => go(current + 1));
 })();
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -217,7 +198,10 @@ window.addEventListener("DOMContentLoaded", () => {
       navMenu.classList.toggle("open", !isOpen);
       document.body.style.overflow = isOpen ? "" : "hidden";
     });
-    navMenu.querySelectorAll(".nav-link").forEach((link) => {
+    navMenu.querySelectorAll(".nav-link:not(.nav-dropdown-toggle)").forEach((link) => {
+      link.addEventListener("click", () => { hamburger.classList.remove("active"); navMenu.classList.remove("open"); document.body.style.overflow = ""; });
+    });
+    navMenu.querySelectorAll(".nav-dropdown-menu a").forEach((link) => {
       link.addEventListener("click", () => { hamburger.classList.remove("active"); navMenu.classList.remove("open"); document.body.style.overflow = ""; });
     });
     document.addEventListener("click", (e) => {
@@ -240,6 +224,33 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const footerYear = document.getElementById("footerYear");
   if (footerYear) footerYear.textContent = new Date().getFullYear();
+
+  // Shop nav dropdown — mobile tap to expand
+  const shopDropdownToggle = document.getElementById("shopDropdownToggle");
+  const navShopDropdown = document.getElementById("navShopDropdown");
+  if (shopDropdownToggle && navShopDropdown) {
+    shopDropdownToggle.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        navShopDropdown.classList.toggle("mobile-open");
+      }
+    });
+  }
+
+  // Product page category filter
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  if (filterBtns.length) {
+    filterBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        const filter = btn.dataset.filter;
+        document.querySelectorAll(".product-card").forEach((card) => {
+          card.style.display = (filter === "all" || card.dataset.category === filter) ? "" : "none";
+        });
+      });
+    });
+  }
 
   const aboutImgWrap = document.querySelector("[data-parallax]");
   if (aboutImgWrap) {
